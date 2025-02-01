@@ -1,14 +1,14 @@
 def step_function(a):
-    if(a >= 1):
+    if a >= 1:
         return 1
-    
+
     return 0
 
 
 def calculate_accuracy(result, expected):
     if len(expected) > len(result):
         return -1
-    
+
     response = []
     for i in range(len(result)):
         res = expected[i] - result[i]
@@ -33,20 +33,28 @@ def process(input_data):
 
 input_data = [
     {
-        "x1": 0, "weight1": 0,
-        "x2": 0, "weight2": 0,
+        "x1": 0,
+        "weight1": 0,
+        "x2": 0,
+        "weight2": 0,
     },
     {
-        "x1": 0, "weight1": 0,
-        "x2": 1, "weight2": 0,
+        "x1": 0,
+        "weight1": 0,
+        "x2": 1,
+        "weight2": 0,
     },
     {
-        "x1": 1, "weight1": 0,
-        "x2": 0, "weight2": 0,
+        "x1": 1,
+        "weight1": 0,
+        "x2": 0,
+        "weight2": 0,
     },
     {
-        "x1": 1, "weight1": 0,
-        "x2": 1, "weight2": 0,
+        "x1": 1,
+        "weight1": 0,
+        "x2": 1,
+        "weight2": 0,
     },
 ]
 
@@ -63,20 +71,28 @@ print()
 print("After update weight")
 input_data = [
     {
-        "x1": 0, "weight1": 0.5,
-        "x2": 0, "weight2": 0.5,
+        "x1": 0,
+        "weight1": 0.5,
+        "x2": 0,
+        "weight2": 0.5,
     },
     {
-        "x1": 0, "weight1": 0.5,
-        "x2": 1, "weight2": 0.5,
+        "x1": 0,
+        "weight1": 0.5,
+        "x2": 1,
+        "weight2": 0.5,
     },
     {
-        "x1": 1, "weight1": 0.5,
-        "x2": 0, "weight2": 0.5,
+        "x1": 1,
+        "weight1": 0.5,
+        "x2": 0,
+        "weight2": 0.5,
     },
     {
-        "x1": 1, "weight1": 0.5,
-        "x2": 1, "weight2": 0.5,
+        "x1": 1,
+        "weight1": 0.5,
+        "x2": 1,
+        "weight2": 0.5,
     },
 ]
 result_1 = process(input_data)
